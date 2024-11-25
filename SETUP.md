@@ -2,7 +2,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/mcmc-solid-state.git
+   git clone https://github.com/davidomanovic/mcmc-solid-state.git
    cd mcmc-solid-state
    ```
 
