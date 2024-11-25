@@ -2,6 +2,11 @@
 
 This project implements **Markov Chain Monte Carlo (MCMC)** methods to simulate and study systems in **solid-state physics** using **statistical physics** principles. The project focuses on modeling and analyzing the behavior of physical systems, such as the **Ising model**, and provides tools to integrate **machine learning algorithms** for extracting insights from simulation data.
 
+<div align="center">
+    <img src="https://github.com/davidomanovic/mcmc-solid-state/blob/main/output/spin_lattice.png" alt="Example" width="350"/>
+</div>
+
+
 ## **Overview**
 The project is designed to:
 - Simulate **physical phenomena** using Monte Carlo methods.
