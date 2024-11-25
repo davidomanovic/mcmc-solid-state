@@ -1,0 +1,6 @@
+# ninja log v5
+11	685	7542339403186445	CMakeFiles/montecarlo.dir/src/cpp/model/IsingModel.cpp.obj	654754ad8f662b03
+23	702	7542339403358107	CMakeFiles/montecarlo.dir/src/cpp/model/MonteCarlo.cpp.obj	ff3cf60a2a180bd0
+16	742	7542339403743563	CMakeFiles/montecarlo.dir/src/cpp/model/Lattice.cpp.obj	923fa465517a0336
+6	4568	7542339441939240	CMakeFiles/montecarlo.dir/src/cpp/bindings/montecarlo_bindings.cpp.obj	3bc3c90cf686eaca
+6	2143	7542340280081754	montecarlo.cp312-win_amd64.pyd	f04b0e81c15df5d4

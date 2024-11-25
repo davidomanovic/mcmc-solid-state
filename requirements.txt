@@ -1,0 +1,8 @@
+numpy
+matplotlib
+seaborn
+pybind11
+tensorflow
+torch
+scipy
+pandas

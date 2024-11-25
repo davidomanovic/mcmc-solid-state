@@ -1,0 +1,3 @@
+rm -rf src/dependencies/pybind11/.git
+src/dependencies/pybind11/tests/
+src/dependencies/pybind11/docs/
