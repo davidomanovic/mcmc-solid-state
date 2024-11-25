@@ -1,5 +1,9 @@
 {
-    "files.associations": {
-        "vector": "cpp"
+    "python.pythonPath": "C:/Users/David/AppData/Local/Programs/Python/Python312",
+    "python.defaultInterpreterPath": "C:/Users/David/AppData/Local/Programs/Python/Python312",
+    "cmake.configureSettings": {
+        "PYTHON_EXECUTABLE": "C:/Users/David/AppData/Local/Programs/Python/Python312",
+        "PYTHON_INCLUDE_DIR": "C:/Users/David/AppData/Local/Programs/Python/Python312/include",
+        "PYTHON_LIBRARY": "C:/Users/David/AppData/Local/Programs/Python/Python312/libs/python312.lib"
     }
 }
