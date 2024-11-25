@@ -2,82 +2,86 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "RelWithDebInfo/montecarlo.cp312-win_amd64.pyd"
+			"path" : "montecarlo.cp312-mingw_x86_64_msvcrt_gnu.pyd"
 		},
 		{
-			"path" : "RelWithDebInfo/montecarlo.pdb"
+			"path" : "montecarlo.pdb"
 		}
 	],
-	"backtrace" : 4,
+	"backtrace" : 2,
 	"backtraceGraph" : 
 	{
 		"commands" : 
 		[
 			"add_library",
-			"__Python_add_library",
-			"python_add_library",
 			"pybind11_add_module",
 			"target_link_libraries",
+			"include",
 			"target_include_directories"
 		],
 		"files" : 
 		[
-			"C:/Program Files/CMake/share/cmake-3.30/Modules/FindPython/Support.cmake",
-			"C:/Program Files/CMake/share/cmake-3.30/Modules/FindPython.cmake",
-			"src/dependencies/pybind11/tools/pybind11NewTools.cmake",
-			"CMakeLists.txt"
+			"src/dependencies/pybind11/tools/pybind11Tools.cmake",
+			"CMakeLists.txt",
+			"src/dependencies/pybind11/tools/pybind11Common.cmake",
+			"src/dependencies/pybind11/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 158,
+				"parent" : 1
+			},
 			{
 				"file" : 3
 			},
 			{
 				"command" : 3,
 				"file" : 3,
-				"line" : 13,
-				"parent" : 0
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"file" : 2,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 200,
+				"parent" : 5
+			},
+			{
+				"file" : 0,
+				"parent" : 6
 			},
 			{
 				"command" : 2,
-				"file" : 2,
-				"line" : 262,
-				"parent" : 1
+				"file" : 0,
+				"line" : 117,
+				"parent" : 7
 			},
 			{
-				"command" : 1,
+				"command" : 4,
 				"file" : 1,
-				"line" : 686,
-				"parent" : 2
-			},
-			{
-				"command" : 0,
-				"file" : 0,
-				"line" : 4229,
-				"parent" : 3
-			},
-			{
-				"command" : 4,
-				"file" : 0,
-				"line" : 4238,
-				"parent" : 3
-			},
-			{
-				"command" : 4,
-				"file" : 2,
-				"line" : 317,
-				"parent" : 1
-			},
-			{
-				"command" : 5,
-				"file" : 3,
 				"line" : 21,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
-				"file" : 2,
-				"line" : 269,
+				"command" : 2,
+				"file" : 0,
+				"line" : 160,
 				"parent" : 1
 			}
 		]
@@ -88,15 +92,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17"
-				},
-				{
-					"backtrace" : 6,
-					"fragment" : "/bigobj"
-				},
-				{
-					"backtrace" : 6,
-					"fragment" : "/MP"
+					"fragment" : "-g -std=gnu++17 -fvisibility=hidden"
 				}
 			],
 			"defines" : 
@@ -108,22 +104,22 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"path" : "C:/GitHub/mcmc-solid-state/src"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"path" : "C:/GitHub/mcmc-solid-state/src/cpp/model"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/GitHub/mcmc-solid-state/src/dependencies/pybind11/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 10,
 					"isSystem" : true,
-					"path" : "C:/Users/David/AppData/Local/Programs/Python/Python312/include"
+					"path" : "C:/msys64/mingw64/include/python3.12"
 				}
 			],
 			"language" : "CXX",
@@ -131,9 +127,9 @@
 			{
 				"backtraces" : 
 				[
-					8,
-					8,
-					8
+					10,
+					10,
+					10
 				],
 				"standard" : "17"
 			},
@@ -146,35 +142,29 @@
 			]
 		}
 	],
-	"dependencies" : 
-	[
-		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
-		}
-	],
 	"id" : "montecarlo::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 5,
-				"fragment" : "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\libs\\python312.lib",
+				"backtrace" : 8,
+				"fragment" : "C:\\msys64\\mingw64\\include\\libs\\python3.12.lib",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "montecarlo",
-	"nameOnDisk" : "montecarlo.cp312-win_amd64.pyd",
+	"nameOnDisk" : "montecarlo.cp312-mingw_x86_64_msvcrt_gnu.pyd",
 	"paths" : 
 	{
 		"build" : ".",
@@ -196,25 +186,25 @@
 	"sources" : 
 	[
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "src/cpp/bindings/montecarlo_bindings.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "src/cpp/model/IsingModel.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "src/cpp/model/Lattice.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "src/cpp/model/MonteCarlo.cpp",
 			"sourceGroupIndex" : 0
