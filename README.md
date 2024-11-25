@@ -1,35 +1,62 @@
-## Setup Instructions
+# **Markov Chain Monte Carlo for Solid State Physics**
 
-### Prerequisites
-1. Install [CMake](https://cmake.org/) (version 3.14 or higher).
-2. Install a C++ compiler:
-   - GCC or Clang on Linux/macOS.
-   - MSVC or MinGW-w64 on Windows.
-3. Python 3.8+ installed with pip.
+This project implements **Markov Chain Monte Carlo (MCMC)** methods to simulate and study systems in **solid-state physics** using **statistical physics** principles. The project focuses on modeling and analyzing the behavior of physical systems, such as the **Ising model**, and provides tools to integrate **machine learning algorithms** for extracting insights from simulation data.
 
-### Installing Dependencies with vcpkg
-1. Clone and set up vcpkg:
+## **Overview**
+The project is designed to:
+- Simulate **physical phenomena** using Monte Carlo methods.
+- Model systems like the **Ising model** on a lattice to study magnetism and phase transitions.
+- Visualize lattice configurations and statistical quantities like magnetization and energy in Python.
+- Provide a flexible platform for extending simulations with **machine learning algorithms** for predictive and exploratory analysis.
+
+### **Features**
+- **C++ Backend**: Computationally efficient implementation of simulation algorithms for lattice models.
+- **Python Integration**: Use `pybind11` to expose C++ functionality for Python users.
+- **Visualization**: Easy-to-use tools in Python for visualizing lattice configurations and statistical properties.
+- **Future Machine Learning Integration**: Framework for training models on simulation results.
+
+---
+
+## **Project Goals**
+1. **Simulate Physical Systems**:
+   - Implement MCMC algorithms for models like the **Ising model** to explore phase transitions, magnetization, and energy fluctuations.
+   - Support for **lattice-based statistical physics models**.
+
+2. **Machine Learning for Physics** (Planned):
+   - Train models to learn properties of physical systems from simulation data.
+   - Predict behaviors like critical temperatures or classify phases of matter.
+
+3. **Visualization**:
+   - Visualize lattice configurations (e.g., spin alignment in the Ising model).
+   - Plot statistical quantities (e.g., magnetization vs. temperature).
+
+---
+
+## **Installation**
+
+### **Prerequisites**
+- **C++ Compiler**:
+  - GCC, Clang, or MSVC with support for C++17 or higher.
+- **CMake** (3.14 or higher)
+- **Python** (3.8 or higher)
+- Required Python libraries: `matplotlib`, `numpy`, `pybind11`.
+
+### **Setup Instructions**
+1. Clone the repository:
    ```bash
-   git clone https://github.com/microsoft/vcpkg.git
-   cd vcpkg
-   ./bootstrap-vcpkg.sh # Linux/macOS
-   .\bootstrap-vcpkg.bat # Windows
+   git clone https://github.com/yourusername/mcmc-solid-state.git
+   cd mcmc-solid-state
    
-2. Install pybind11
+2. Configure and build the project:
    ```bash
-   ./vcpkg install pybind11
-   ```
+   mkdir build
+   cd build
+   cmake .. -DPYTHON_EXECUTABLE=$(which python3)
+   cmake --build .
 
-3. Set up vcpkg for your project
+3. Install dependencies for Python
    ```bash
-   cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
-   ```
-### Build instructions
-Create build directory, run CMake, build project and test python bindings:
-```bash
-mkdir build
-cd build
-cmake .. -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
-cmake --build .
-python -c "import montecarlo; print(montecarlo.IsingModel(10,2.5).get_lattice())"
-```
+   pip install -r requirements.txt
+
+
+
