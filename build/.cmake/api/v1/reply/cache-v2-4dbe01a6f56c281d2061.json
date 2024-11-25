@@ -2,6 +2,22 @@
 	"entries" : 
 	[
 		{
+			"name" : "CMAKE_ADDR2LINE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/addr2line.exe"
+		},
+		{
 			"name" : "CMAKE_AR",
 			"properties" : 
 			[
@@ -15,7 +31,19 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/lib.exe"
+			"value" : "C:/msys64/mingw64/bin/ar.exe"
+		},
+		{
+			"name" : "CMAKE_BUILD_TYPE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "STRING",
+			"value" : "Debug"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -78,18 +106,6 @@
 			"value" : "C:/Program Files/CMake/bin/cmake.exe"
 		},
 		{
-			"name" : "CMAKE_CONFIGURATION_TYPES",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Semicolon separated list of supported configuration types, only supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything else will be ignored."
-				}
-			],
-			"type" : "STRING",
-			"value" : "Debug;Release;MinSizeRel;RelWithDebInfo"
-		},
-		{
 			"name" : "CMAKE_CPACK_COMMAND",
 			"properties" : 
 			[
@@ -114,6 +130,54 @@
 			"value" : "C:/Program Files/CMake/bin/ctest.exe"
 		},
 		{
+			"name" : "CMAKE_CXX_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "CXX compiler"
+				}
+			],
+			"type" : "STRING",
+			"value" : "C:/msys64/mingw64/bin/g++.exe"
+		},
+		{
+			"name" : "CMAKE_CXX_COMPILER_AR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/gcc-ar.exe"
+		},
+		{
+			"name" : "CMAKE_CXX_COMPILER_RANLIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/gcc-ranlib.exe"
+		},
+		{
 			"name" : "CMAKE_CXX_FLAGS",
 			"properties" : 
 			[
@@ -127,7 +191,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -143,7 +207,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MDd /Zi /Ob0 /Od /RTC1"
+			"value" : "-g"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_MINSIZEREL",
@@ -159,7 +223,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O1 /Ob1 /DNDEBUG"
+			"value" : "-Os -DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_RELEASE",
@@ -175,7 +239,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O2 /Ob2 /DNDEBUG"
+			"value" : "-O3 -DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
@@ -191,7 +255,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /Zi /O2 /Ob1 /DNDEBUG"
+			"value" : "-O2 -g -DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_CXX_STANDARD_LIBRARIES",
@@ -207,7 +271,47 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib"
+			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
+		},
+		{
+			"name" : "CMAKE_C_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/gcc.exe"
+		},
+		{
+			"name" : "CMAKE_DLLTOOL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/dlltool.exe"
+		},
+		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/Program Files/CMake/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -235,7 +339,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
@@ -251,7 +355,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/debug /INCREMENTAL"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_MINSIZEREL",
@@ -267,7 +371,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/INCREMENTAL:NO"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_RELEASE",
@@ -283,7 +387,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/INCREMENTAL:NO"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO",
@@ -299,7 +403,19 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/debug /INCREMENTAL"
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "TRUE"
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -335,7 +451,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Visual Studio 17 2022"
+			"value" : "Ninja"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -347,7 +463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_GENERATOR_PLATFORM",
@@ -372,6 +488,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
+		},
+		{
+			"name" : "CMAKE_GNUtoMS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Convert GNU import libraries to MS format (requires Visual Studio)"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "CMAKE_HOME_DIRECTORY",
@@ -667,7 +795,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/link.exe"
+			"value" : "C:/msys64/mingw64/bin/ld.exe"
+		},
+		{
+			"name" : "CMAKE_MAKE_PROGRAM",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Program used to build from build.ninja files."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -683,7 +827,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
@@ -699,7 +843,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/debug /INCREMENTAL"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL",
@@ -715,7 +859,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/INCREMENTAL:NO"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_RELEASE",
@@ -731,7 +875,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/INCREMENTAL:NO"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO",
@@ -747,10 +891,10 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/debug /INCREMENTAL"
+			"value" : ""
 		},
 		{
-			"name" : "CMAKE_MT",
+			"name" : "CMAKE_NM",
 			"properties" : 
 			[
 				{
@@ -763,7 +907,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "CMAKE_MT-NOTFOUND"
+			"value" : "C:/msys64/mingw64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -776,6 +920,38 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "2"
+		},
+		{
+			"name" : "CMAKE_OBJCOPY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/objcopy.exe"
+		},
+		{
+			"name" : "CMAKE_OBJDUMP",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -890,12 +1066,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "noop for ranlib"
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "INTERNAL",
-			"value" : ":"
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -911,7 +1091,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "rc"
+			"value" : "C:/msys64/mingw64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -939,7 +1119,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-DWIN32"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_RC_FLAGS_DEBUG",
@@ -955,7 +1135,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-D_DEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_RC_FLAGS_MINSIZEREL",
@@ -1006,6 +1186,22 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_READELF",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/readelf.exe"
+		},
+		{
 			"name" : "CMAKE_ROOT",
 			"properties" : 
 			[
@@ -1031,7 +1227,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_DEBUG",
@@ -1047,7 +1243,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/debug /INCREMENTAL"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL",
@@ -1063,7 +1259,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/INCREMENTAL:NO"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_RELEASE",
@@ -1079,7 +1275,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/INCREMENTAL:NO"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO",
@@ -1095,7 +1291,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/debug /INCREMENTAL"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_SKIP_INSTALL_RPATH",
@@ -1143,7 +1339,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/machine:x64"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_STATIC_LINKER_FLAGS_DEBUG",
@@ -1210,6 +1406,38 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_STRIP",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/strip.exe"
+		},
+		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_TAPI-NOTFOUND"
+		},
+		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
 			"properties" : 
 			[
@@ -1235,19 +1463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/python.exe3.12.7"
-		},
-		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding Python"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[C:/Users/David/AppData/Local/Programs/Python/Python312/python.exe][C:/Users/David/AppData/Local/Programs/Python/Python312/libs/python312.lib][C:/Users/David/AppData/Local/Programs/Python/Python312/include][cfound components: Interpreter Development.Module Development.Embed ][v3.12.7(3.8)]"
+			"value" : "C:/msys64/mingw64/bin/python3.exe3.12.7"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp",
@@ -1259,19 +1475,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[C:/Users/David/AppData/Local/Programs/Python/Python312/python.exe][v3.12.7(3.8)]"
-		},
-		{
-			"name" : "HAS_MSVC_GL_LTCG",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Test HAS_MSVC_GL_LTCG"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "[C:/msys64/mingw64/bin/python3.exe][v3.12.7(3.8)]"
 		},
 		{
 			"name" : "IsingModelBindings_BINARY_DIR",
@@ -1331,7 +1535,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "PYBIND11_INCLUDE_DIR",
@@ -1406,18 +1610,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "PYBIND11_PYTHON_EXECUTABLE_LAST",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Python executable during the last CMake run"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/python.exe"
-		},
-		{
 			"name" : "PYBIND11_PYTHON_VERSION",
 			"properties" : 
 			[
@@ -1475,23 +1667,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/python.exe"
-		},
-		{
-			"name" : "PYTHON_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "UNINITIALIZED",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/include"
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/python3.exe"
 		},
 		{
 			"name" : "PYTHON_INCLUDE_DIRS",
@@ -1503,7 +1683,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/Include"
+			"value" : "C:/msys64/mingw64/include/python3.12"
 		},
 		{
 			"name" : "PYTHON_IS_DEBUG",
@@ -1527,19 +1707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/libs/python312.lib"
-		},
-		{
-			"name" : "PYTHON_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "UNINITIALIZED",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/libs/python312.lib"
+			"value" : "C:/msys64/mingw64/include/libs/python3.12.lib"
 		},
 		{
 			"name" : "PYTHON_MODULE_DEBUG_POSTFIX",
@@ -1563,7 +1731,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ".cp312-win_amd64.pyd"
+			"value" : ".cp312-mingw_x86_64_msvcrt_gnu.pyd"
 		},
 		{
 			"name" : "PYTHON_MODULE_PREFIX",
@@ -1626,88 +1794,16 @@
 			"value" : "3.12;3.11;3.10;3.9;3.8"
 		},
 		{
-			"name" : "Python_EXECUTABLE",
+			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Python Interpreter"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/python.exe"
-		},
-		{
-			"name" : "Python_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Python Include Directory"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/include"
-		},
-		{
-			"name" : "Python_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Python Library"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/libs/python312.lib"
-		},
-		{
-			"name" : "Python_VERSION",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "linker supports push/pop state"
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3.12.7"
-		},
-		{
-			"name" : "Python_VERSION_MAJOR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "3"
-		},
-		{
-			"name" : "Python_VERSION_MINOR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "12"
-		},
-		{
-			"name" : "Python_VERSION_PATCH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "7"
+			"value" : "TRUE"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -1743,163 +1839,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Python"
-		},
-		{
-			"name" : "_Python_Compiler_REASON_FAILURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Compiler reason failure"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "_Python_DEVELOPMENT_EMBED_SIGNATURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "2688911ac21c8f10cdf239b4bddcecb6"
-		},
-		{
-			"name" : "_Python_DEVELOPMENT_MODULE_SIGNATURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "2688911ac21c8f10cdf239b4bddcecb6"
-		},
-		{
-			"name" : "_Python_Development_REASON_FAILURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Development reason failure"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "_Python_EXECUTABLE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/python.exe"
-		},
-		{
-			"name" : "_Python_EXECUTABLE_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "_Python_EXECUTABLE_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "_Python_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/include"
-		},
-		{
-			"name" : "_Python_INTERPRETER_PROPERTIES",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Python Properties"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "Python;3;12;7;64;<none>;cp312-win_amd64;;C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\Lib;C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\Lib;C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages;C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages"
-		},
-		{
-			"name" : "_Python_INTERPRETER_SIGNATURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "05808fec8102a1d0a6d5222214877a16"
-		},
-		{
-			"name" : "_Python_LIBRARY_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "_Python_LIBRARY_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "_Python_LIBRARY_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/libs/python312.lib"
-		},
-		{
-			"name" : "_Python_NumPy_REASON_FAILURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "NumPy reason failure"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "_Python_RUNTIME_LIBRARY_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "C:/Users/David/AppData/Local/Programs/Python/Python312/python312.dll"
+			"value" : "PYTHON"
 		},
 		{
 			"name" : "pybind11_BINARY_DIR",
@@ -1947,7 +1887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/GitHub/mcmc-solid-state/src/dependencies/pybind11/include;C:/Users/David/AppData/Local/Programs/Python/Python312/include"
+			"value" : "C:/GitHub/mcmc-solid-state/src/dependencies/pybind11/include;C:/msys64/mingw64/include/python3.12"
 		},
 		{
 			"name" : "pybind11_IS_TOP_LEVEL",
