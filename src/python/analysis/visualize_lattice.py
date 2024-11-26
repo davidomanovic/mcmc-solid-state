@@ -1,4 +1,6 @@
 # visualize_lattice.py
+import matplotlib
+matplotlib.use("TkAgg")  # Adding Linux compatibility
 import matplotlib.pyplot as plt
 import numpy as np
 
