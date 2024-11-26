@@ -6,31 +6,20 @@
    cd mcmc-solid-state
    ```
 
-2. Set Python paths or rely on autodetection by ```find_package```
+2. Build the C++ library, or just use my compiled one
+  ```bash
+  mkdir build
+  cd build
+  cmake .. -DPYTHON_EXECUTABLE=$(which python3)
+  cmake --build .
+  ```
 
-For Windows
-```cmd
-set PYTHON_EXECUTABLE=C:\Path\To\Python\python.exe
-set PYTHON_INCLUDE_DIR=C:\Path\To\Python\include
-set PYTHON_LIBRARY=C:\Path\To\Python\libs\python312.lib
-```
 
-For Linux/Mac
+4. Install my compiled Python package 
 
-```bash
-export PYTHON_EXECUTABLE=/path/to/python
-export PYTHON_INCLUDE_DIR=/path/to/python/include
-export PYTHON_LIBRARY=/path/to/python/libs/python3.x.a
-```
-
-3. Build the project
-
-```bash
-mkdir build
-cd build
-cmake ..
-cmake --build .
-```
+  ```bash
+  pip install -e .
+  ```
 
 ---
 
