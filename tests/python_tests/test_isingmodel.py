@@ -4,7 +4,6 @@ sys.path.append('./src/python/analysis')
 
 import montecarlo # type: ignore
 from visualize_lattice import LatticeVisualizer # type: ignore
-import matplotlib.pyplot as plt
 import numpy as np
 
 ising = montecarlo.IsingModel(size=10, temperature=5)
