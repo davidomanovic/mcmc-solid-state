@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/GitHub/mcmc-solid-state/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -Dmontecarlo_EXPORTS -IC:/GitHub/mcmc-solid-state/src -IC:/GitHub/mcmc-solid-state/src/cpp/model -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/include -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/include -g -std=gnu++17 -fvisibility=hidden -o CMakeFiles\\montecarlo.dir\\src\\cpp\\bindings\\montecarlo_bindings.cpp.obj -c C:\\GitHub\\mcmc-solid-state\\src\\cpp\\bindings\\montecarlo_bindings.cpp",
+  "file": "C:\\GitHub\\mcmc-solid-state\\src\\cpp\\bindings\\montecarlo_bindings.cpp",
+  "output": "CMakeFiles\\montecarlo.dir\\src\\cpp\\bindings\\montecarlo_bindings.cpp.obj"
+},
+{
+  "directory": "C:/GitHub/mcmc-solid-state/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -Dmontecarlo_EXPORTS -IC:/GitHub/mcmc-solid-state/src -IC:/GitHub/mcmc-solid-state/src/cpp/model -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/include -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/include -g -std=gnu++17 -fvisibility=hidden -o CMakeFiles\\montecarlo.dir\\src\\cpp\\model\\IsingModel.cpp.obj -c C:\\GitHub\\mcmc-solid-state\\src\\cpp\\model\\IsingModel.cpp",
+  "file": "C:\\GitHub\\mcmc-solid-state\\src\\cpp\\model\\IsingModel.cpp",
+  "output": "CMakeFiles\\montecarlo.dir\\src\\cpp\\model\\IsingModel.cpp.obj"
+},
+{
+  "directory": "C:/GitHub/mcmc-solid-state/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -Dmontecarlo_EXPORTS -IC:/GitHub/mcmc-solid-state/src -IC:/GitHub/mcmc-solid-state/src/cpp/model -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/include -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/include -g -std=gnu++17 -fvisibility=hidden -o CMakeFiles\\montecarlo.dir\\src\\cpp\\model\\Lattice.cpp.obj -c C:\\GitHub\\mcmc-solid-state\\src\\cpp\\model\\Lattice.cpp",
+  "file": "C:\\GitHub\\mcmc-solid-state\\src\\cpp\\model\\Lattice.cpp",
+  "output": "CMakeFiles\\montecarlo.dir\\src\\cpp\\model\\Lattice.cpp.obj"
+},
+{
+  "directory": "C:/GitHub/mcmc-solid-state/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -Dmontecarlo_EXPORTS -IC:/GitHub/mcmc-solid-state/src -IC:/GitHub/mcmc-solid-state/src/cpp/model -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/include -isystem C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/include -g -std=gnu++17 -fvisibility=hidden -o CMakeFiles\\montecarlo.dir\\src\\cpp\\model\\MonteCarlo.cpp.obj -c C:\\GitHub\\mcmc-solid-state\\src\\cpp\\model\\MonteCarlo.cpp",
+  "file": "C:\\GitHub\\mcmc-solid-state\\src\\cpp\\model\\MonteCarlo.cpp",
+  "output": "CMakeFiles\\montecarlo.dir\\src\\cpp\\model\\MonteCarlo.cpp.obj"
+}
+]
