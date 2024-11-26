@@ -1,19 +1,16 @@
-import sys, os
-script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
-pyd_dir = os.path.abspath(os.path.join(script_dir, '../../lib'))  # Adjust path to pyd location
-sys.path.append(pyd_dir)
+import os, sys
+sys.path.append('./lib')
+sys.path.append('./src/python/analysis')
 
 import montecarlo # type: ignore
+from visualize_lattice import LatticeVisualizer # type: ignore
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 10x10 grid
-ising = montecarlo.IsingModel(size=10, temperature=4)
-
-# Initialize the lattice with random spins
+ising = montecarlo.IsingModel(size=10, temperature=5)
 ising.initialize_lattice()
 
-N = 1000
+N = 100
 
 # Perform some MCMC
 for step in range(N):
@@ -26,3 +23,7 @@ energy = ising.calculate_total_energy()
 magnetization = ising.calculate_magnetization()
 print(f"Total Energy: {energy}")
 print(f"Magnetization: {magnetization}")
+
+# Plot the lattice
+visualize = LatticeVisualizer(lattice)
+visualize.plot(title="Spin Lattice",circle_color="gray",arrow_scale=2,arrow_alpha=1.0)

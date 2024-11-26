@@ -19,24 +19,17 @@ public:
     // Initialize lattice with random spins
     void initializeRandom();
 
-    // Get the size of the lattice
-    int getSize() const;
-
-    // Access spin at a specific position
-    int getSpin(int x, int y) const;
-
     // Flip spin at position (x, y)
     void flipSpin(int x, int y);
 
-    // Calculate total energy of the lattice
+    // Calculate lattice energy, magnetization
     double calculateTotalEnergy() const;
-
-    // Calculate total magnetization of the lattice
     double calculateMagnetization() const;
 
-    // Getterrr
+    // Getter methods
     const std::vector<std::vector<int>>& getSpins() const;
-
+    int getSize() const;
+    int getSpin(int x, int y) const;
 };
 
 #endif // LATTICE_H

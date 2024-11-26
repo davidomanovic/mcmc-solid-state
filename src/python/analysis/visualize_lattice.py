@@ -51,7 +51,7 @@ class LatticeVisualizer:
         plt.scatter(
             self.x,
             self.y,
-            s=500,
+            s=int(500 * 100/np.size(v)),
             facecolors=circle_color,
             edgecolors="black",
             linewidths=1,

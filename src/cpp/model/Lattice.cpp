@@ -13,18 +13,10 @@ void Lattice::initializeRandom() {
     }
 }
 
-int Lattice::getSize() const {
-    return size;
-}
-
 int Lattice::periodicBoundary(int index) const {
     if (index < 0) return size - 1;
     if (index >= size) return 0;
     return index;
-}
-
-int Lattice::getSpin(int x, int y) const {
-    return spins[x][y];
 }
 
 void Lattice::flipSpin(int x, int y) {
@@ -58,4 +50,12 @@ double Lattice::calculateMagnetization() const {
 
 const std::vector<std::vector<int>>& Lattice::getSpins() const {
     return spins;
+}
+
+int Lattice::getSpin(int x, int y) const {
+    return spins[x][y];
+}
+
+int Lattice::getSize() const {
+    return size;
 }
