@@ -65,9 +65,8 @@ The project is designed to:
    cmake .. -DPYTHON_EXECUTABLE=$(which python3)
    cmake --build .
 
-3. Install dependencies for Python
+3. Install dependencies for Python and my C++ compiled library (root directory)
    ```bash
    pip install -r requirements.txt
-
-
+   pip install -e .
 
