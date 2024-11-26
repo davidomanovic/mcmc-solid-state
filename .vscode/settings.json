@@ -1,9 +1,9 @@
 {
-    "python.pythonPath": "C:/Users/David/AppData/Local/Programs/Python/Python312",
-    "python.defaultInterpreterPath": "C:/Users/David/AppData/Local/Programs/Python/Python312",
+    "python.defaultInterpreterPath": "${env:PYTHON_PATH}",
+    "python.pythonPath": "${env:PYTHON_PATH}",
     "cmake.configureSettings": {
-        "PYTHON_EXECUTABLE": "C:/Users/David/AppData/Local/Programs/Python/Python312",
-        "PYTHON_INCLUDE_DIR": "C:/Users/David/AppData/Local/Programs/Python/Python312/include",
-        "PYTHON_LIBRARY": "C:/Users/David/AppData/Local/Programs/Python/Python312/libs/python312.lib"
+        "PYTHON_EXECUTABLE": "${env:PYTHON_PATH}",
+        "PYTHON_INCLUDE_DIR": "${env:PYTHON_INCLUDE_DIR}",
+        "PYTHON_LIBRARY": "${env:PYTHON_LIBRARY}"
     }
 }

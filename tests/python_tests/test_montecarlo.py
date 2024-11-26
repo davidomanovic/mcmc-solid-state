@@ -1,7 +1,9 @@
-import sys
-sys.path.append('./src/cpp/model')
+import sys, os
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+pyd_dir = os.path.abspath(os.path.join(script_dir, '../../src/cpp/model'))  # Adjust path to pyd location
+sys.path.append(pyd_dir)
 
-import montecarlo
+import montecarlo # type: ignore
 import matplotlib.pyplot as plt
 import numpy as np
 

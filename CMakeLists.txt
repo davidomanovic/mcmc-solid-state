@@ -1,34 +1,33 @@
 cmake_minimum_required(VERSION 3.14)
 project(IsingModelBindings LANGUAGES CXX)
-set(CMAKE_STRIP echo)
 
-# Check for Python paths via environment variables
-if(DEFINED ENV{PYTHON_EXECUTABLE})
-    set(PYTHON_EXECUTABLE $ENV{PYTHON_EXECUTABLE})
-endif()
-
-if(DEFINED ENV{PYTHON_INCLUDE_DIR})
-    set(PYTHON_INCLUDE_DIR $ENV{PYTHON_INCLUDE_DIR})
-endif()
-
-if(DEFINED ENV{PYTHON_LIBRARY})
-    set(PYTHON_LIBRARY $ENV{PYTHON_LIBRARY})
-endif()
-
-# Forward Python paths to pybind11
-add_subdirectory(src/dependencies/pybind11)
-
-# Debug output to ensure paths are correct
-message(STATUS "PYTHON_EXECUTABLE: ${PYTHON_EXECUTABLE}")
-message(STATUS "PYTHON_INCLUDE_DIR: ${PYTHON_INCLUDE_DIR}")
-message(STATUS "PYTHON_LIBRARY: ${PYTHON_LIBRARY}")
+#Find python :)
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+set(PYTHON_EXECUTABLE ${Python3_EXECUTABLE})
+set(PYTHON_INCLUDE_DIR ${Python3_INCLUDE_DIRS})
+set(PYTHON_LIBRARY ${Python3_LIBRARIES})
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Include the local pybind11 directory
-add_subdirectory(src/dependencies/pybind11)
+# Find Python interpreter and development components
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+
+# Debug output to verify Python paths
+message(STATUS "Python3_EXECUTABLE: ${Python3_EXECUTABLE}")
+message(STATUS "Python3_INCLUDE_DIRS: ${Python3_INCLUDE_DIRS}")
+message(STATUS "Python3_LIBRARIES: ${Python3_LIBRARIES}")
+
+# Add pybind11 using pip-installed version
+execute_process(
+    COMMAND ${Python3_EXECUTABLE} -m pybind11 --cmakedir
+    OUTPUT_VARIABLE PYBIND11_CMAKE_DIR
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+message(STATUS "pybind11 CMake directory: ${PYBIND11_CMAKE_DIR}")
+
+find_package(pybind11 REQUIRED PATHS ${PYBIND11_CMAKE_DIR})
 
 # Add your bindings
 pybind11_add_module(montecarlo
@@ -42,5 +41,4 @@ pybind11_add_module(montecarlo
 target_include_directories(montecarlo PRIVATE
     ${PROJECT_SOURCE_DIR}/src/
     ${PROJECT_SOURCE_DIR}/src/cpp/model
-    ${PROJECT_SOURCE_DIR}/src/dependencies/pybind11/include
 )
