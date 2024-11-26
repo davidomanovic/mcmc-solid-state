@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-      Build started 11/25/2024 7:07:51 PM.
+      Build started 11/26/2024 10:04:50 AM.
       
       Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\3.30.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.65
+      Time Elapsed 00:00:00.54
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -72,8 +72,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-ijv6ns"
-      binary: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-ijv6ns"
+      source: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-9i1v5r"
+      binary: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-9i1v5r"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -83,40 +83,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-ijv6ns'
+        Change Dir: 'C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-9i1v5r'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_96c70.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c2a49.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-        Build started 11/25/2024 7:07:52 PM.
+        Build started 11/26/2024 10:04:51 AM.
         
-        Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijv6ns\\cmTC_96c70.vcxproj" on node 1 (default targets).
+        Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i1v5r\\cmTC_c2a49.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_96c70.dir\\Debug\\".
+          Creating directory "cmTC_c2a49.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijv6ns\\Debug\\".
-          Creating directory "cmTC_96c70.dir\\Debug\\cmTC_96c70.tlog\\".
+          Creating directory "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i1v5r\\Debug\\".
+          Creating directory "cmTC_c2a49.dir\\Debug\\cmTC_c2a49.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_96c70.dir\\Debug\\cmTC_96c70.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_96c70.dir\\Debug\\cmTC_96c70.tlog\\unsuccessfulbuild".
+          Creating "cmTC_c2a49.dir\\Debug\\cmTC_c2a49.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c2a49.dir\\Debug\\cmTC_c2a49.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_96c70.dir\\Debug\\\\" /Fd"cmTC_96c70.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c2a49.dir\\Debug\\\\" /Fd"cmTC_c2a49.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33813 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_96c70.dir\\Debug\\\\" /Fd"cmTC_96c70.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c2a49.dir\\Debug\\\\" /Fd"cmTC_c2a49.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijv6ns\\Debug\\cmTC_96c70.exe" /INCREMENTAL /ILK:"cmTC_96c70.dir\\Debug\\cmTC_96c70.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-ijv6ns/Debug/cmTC_96c70.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-ijv6ns/Debug/cmTC_96c70.lib" /MACHINE:X64  /machine:x64 cmTC_96c70.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_96c70.vcxproj -> C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijv6ns\\Debug\\cmTC_96c70.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i1v5r\\Debug\\cmTC_c2a49.exe" /INCREMENTAL /ILK:"cmTC_c2a49.dir\\Debug\\cmTC_c2a49.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-9i1v5r/Debug/cmTC_c2a49.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-9i1v5r/Debug/cmTC_c2a49.lib" /MACHINE:X64  /machine:x64 cmTC_c2a49.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_c2a49.vcxproj -> C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i1v5r\\Debug\\cmTC_c2a49.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_96c70.dir\\Debug\\cmTC_96c70.tlog\\unsuccessfulbuild".
-          Touching "cmTC_96c70.dir\\Debug\\cmTC_96c70.tlog\\cmTC_96c70.lastbuildstate".
-        Done Building Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijv6ns\\cmTC_96c70.vcxproj" (default targets).
+          Deleting file "cmTC_c2a49.dir\\Debug\\cmTC_c2a49.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c2a49.dir\\Debug\\cmTC_c2a49.tlog\\cmTC_c2a49.lastbuildstate".
+        Done Building Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i1v5r\\cmTC_c2a49.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.43
+        Time Elapsed 00:00:00.51
         
       exitCode: 0
   -
@@ -153,66 +153,66 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
-      - "src/dependencies/pybind11/tools/pybind11Common.cmake:295 (check_cxx_compiler_flag)"
-      - "src/dependencies/pybind11/tools/pybind11Common.cmake:362 (_pybind11_return_if_cxx_and_linker_flags_work)"
-      - "src/dependencies/pybind11/tools/pybind11Common.cmake:396 (_pybind11_generate_lto)"
-      - "src/dependencies/pybind11/CMakeLists.txt:232 (include)"
+      - "C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:323 (check_cxx_compiler_flag)"
+      - "C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:390 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:435 (_pybind11_generate_lto)"
+      - "C:/Users/David/AppData/Local/Programs/Python/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:250 (include)"
+      - "CMakeLists.txt:37 (find_package)"
     checks:
       - "Performing Test HAS_MSVC_GL_LTCG"
     directories:
-      source: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-653bs3"
-      binary: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-653bs3"
+      source: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-a1rx6f"
+      binary: "C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-a1rx6f"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: ""
     buildResult:
       variable: "HAS_MSVC_GL_LTCG"
       cached: true
       stdout: |
-        Change Dir: 'C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-653bs3'
+        Change Dir: 'C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-a1rx6f'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e7a16.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_55914.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-        Build started 11/25/2024 7:07:52 PM.
+        Build started 11/26/2024 10:04:53 AM.
         
-        Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\cmTC_e7a16.vcxproj" on node 1 (default targets).
+        Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\cmTC_55914.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_e7a16.dir\\Debug\\".
+          Creating directory "cmTC_55914.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\Debug\\".
-          Creating directory "cmTC_e7a16.dir\\Debug\\cmTC_e7a16.tlog\\".
+          Creating directory "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\Debug\\".
+          Creating directory "cmTC_55914.dir\\Debug\\cmTC_55914.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e7a16.dir\\Debug\\cmTC_e7a16.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e7a16.dir\\Debug\\cmTC_e7a16.tlog\\unsuccessfulbuild".
+          Creating "cmTC_55914.dir\\Debug\\cmTC_55914.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_55914.dir\\Debug\\cmTC_55914.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_e7a16.dir\\Debug\\\\" /Fd"cmTC_e7a16.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_55914.dir\\Debug\\\\" /Fd"cmTC_55914.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33813 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_e7a16.dir\\Debug\\\\" /Fd"cmTC_e7a16.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\src.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_55914.dir\\Debug\\\\" /Fd"cmTC_55914.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\Debug\\cmTC_e7a16.exe" /INCREMENTAL /ILK:"cmTC_e7a16.dir\\Debug\\cmTC_e7a16.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-653bs3/Debug/cmTC_e7a16.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-653bs3/Debug/cmTC_e7a16.lib" /MACHINE:X64  /machine:x64 cmTC_e7a16.dir\\Debug\\src.obj
-        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\cmTC_e7a16.vcxproj]
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\Debug\\cmTC_55914.exe" /INCREMENTAL /ILK:"cmTC_55914.dir\\Debug\\cmTC_55914.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-a1rx6f/Debug/cmTC_55914.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/GitHub/mcmc-solid-state/build/CMakeFiles/CMakeScratch/TryCompile-a1rx6f/Debug/cmTC_55914.lib" /MACHINE:X64  /machine:x64 cmTC_55914.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\cmTC_55914.vcxproj]
           Generating code
           Finished generating code
-          cmTC_e7a16.vcxproj -> C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\Debug\\cmTC_e7a16.exe
+          cmTC_55914.vcxproj -> C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\Debug\\cmTC_55914.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_e7a16.dir\\Debug\\cmTC_e7a16.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e7a16.dir\\Debug\\cmTC_e7a16.tlog\\cmTC_e7a16.lastbuildstate".
-        Done Building Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\cmTC_e7a16.vcxproj" (default targets).
+          Deleting file "cmTC_55914.dir\\Debug\\cmTC_55914.tlog\\unsuccessfulbuild".
+          Touching "cmTC_55914.dir\\Debug\\cmTC_55914.tlog\\cmTC_55914.lastbuildstate".
+        Done Building Project "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\cmTC_55914.vcxproj" (default targets).
         
         Build succeeded.
         
-        "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\cmTC_e7a16.vcxproj" (default target) (1) ->
+        "C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\cmTC_55914.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-653bs3\\cmTC_e7a16.vcxproj]
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\GitHub\\mcmc-solid-state\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a1rx6f\\cmTC_55914.vcxproj]
         
             1 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.45
+        Time Elapsed 00:00:00.44
         
       exitCode: 0
 ...
