@@ -42,3 +42,7 @@ target_include_directories(montecarlo PRIVATE
     ${PROJECT_SOURCE_DIR}/src/
     ${PROJECT_SOURCE_DIR}/src/cpp/model
 )
+
+add_custom_command(TARGET montecarlo POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:montecarlo> ${PROJECT_SOURCE_DIR}/lib/
+)
