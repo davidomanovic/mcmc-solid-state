@@ -4,3 +4,4 @@
 /lib/*.so
 *.egg-info
 __pycache__/
+*.npz
