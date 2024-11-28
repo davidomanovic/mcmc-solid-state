@@ -2,14 +2,14 @@ import os, sys
 sys.path.append('./lib')  # Ensure Python can find the compiled file
 
 import numpy as np
-import montecarlo as mc  # Your Ising Model module 
+import montecarlo as mc  # Your Ising Model module #type:ignore
 
-temperatures = np.linspace(1.0, 5.0, 10)
+temperatures = np.linspace(1.0, 25, 100)
 lattices = []
 labels = []
 
 for T in temperatures:
-    ising_model = mc.IsingModel(size=20, temperature=T)
+    ising_model = mc.IsingModel(size=100, temperature=T)
     ising_model.initialize_lattice()
 
     # Perform Monte Carlo steps and save each lattice with its label
