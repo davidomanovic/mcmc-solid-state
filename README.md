@@ -3,8 +3,14 @@
 This project implements **Markov Chain Monte Carlo (MCMC)** methods to simulate and study systems in **solid-state physics** using **statistical physics** principles. The project focuses on modeling and analyzing the behavior of physical systems, such as the **Ising model**, and provides tools to integrate **machine learning algorithms** for extracting insights from simulation data.
 
 <div align="center">
-    <img src="https://github.com/davidomanovic/mcmc-solid-state/blob/main/output/spin_lattice.png" alt="Example" width="350"/>
+    
 </div>
+
+<p align="center">
+  <img src="https://github.com/davidomanovic/mcmc-solid-state/blob/main/output/spin_lattice.png" alt="SpinLattice" width="35%">
+  <img src="https://github.com/davidomanovic/mcmc-solid-state/blob/main/output/feature_importance.png" alt="Features" width="44.5%">
+
+</p>
 
 
 ## **Overview**
@@ -59,9 +65,8 @@ The project is designed to:
    cmake .. -DPYTHON_EXECUTABLE=$(which python3)
    cmake --build .
 
-3. Install dependencies for Python
+3. Install dependencies for Python and my C++ compiled library (root directory)
    ```bash
    pip install -r requirements.txt
-
-
+   pip install -e .
 
