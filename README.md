@@ -8,8 +8,6 @@ This project implements **Markov Chain Monte Carlo (MCMC)** methods to simulate 
 
 <p align="center">
   <img src="https://github.com/davidomanovic/mcmc-solid-state/blob/main/output/spin_lattice.png" alt="SpinLattice" width="35%">
-  <img src="https://github.com/davidomanovic/mcmc-solid-state/blob/main/output/feature_importance.png" alt="Features" width="44.5%">
-
 </p>
 
 
