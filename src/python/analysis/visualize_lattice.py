@@ -1,8 +1,11 @@
 # visualize_lattice.py
 import matplotlib
-matplotlib.use("TkAgg")  # Adding Linux compatibility
+import platform
 import matplotlib.pyplot as plt
 import numpy as np
+
+if platform == "Linux":
+    matplotlib.use("TkAgg")  # Adding Linux compatibility
 
 class LatticeVisualizer:
     def __init__(self, lattice):
