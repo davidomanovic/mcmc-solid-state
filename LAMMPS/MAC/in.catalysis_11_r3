@@ -1,0 +1,103 @@
+# ------------------------------------------------------------------------------
+# LAMMPS input script for catalysis_11_r3
+# Date/time stamp: 2024-09-04 12:48:42.605058
+# ------------------------------------------------------------------------------
+
+# Write simulation log to an external file
+log            log.catalysis_11_r3
+
+# ------------------------------------------------------------------------------
+# Basic simulation settings
+# ------------------------------------------------------------------------------
+units          metal              # Use 'metal' units
+dimension      2                  # 2D simulation
+boundary       p p p              # Periodic in x, y, z
+newton         on                 # Newton's third law for pair interactions
+atom_style     atomic             # Basic atom style (x, y, z, etc.)
+
+# ------------------------------------------------------------------------------
+# Initial structure and force field
+# ------------------------------------------------------------------------------
+read_data      data.catalysis_11_r3
+
+pair_style     airebo 3.0 1 1     # AIREBO potential: cutoffs = 3.0, special flags
+pair_coeff     * * CH.airebo C    # Apply AIREBO to all atoms as carbon
+
+# ------------------------------------------------------------------------------
+# Output settings (trajectory dumps)
+# ------------------------------------------------------------------------------
+dump           mydump all atom 2000 dump.catalysis_11_r3  # Dump coordinates every 2000 steps
+dump_modify    mydump sort id                            # Sort dump atoms by ID
+dump_modify    mydump scale no                           # Do not scale positions by box dimension
+
+# ------------------------------------------------------------------------------
+# Fixes and relaxation
+# ------------------------------------------------------------------------------
+fix 4 all enforce2d             # Constrain motion to 2D
+fix 5 all box/relax iso 0.0      # Relax the box isotropically to zero pressure
+
+# ------------------------------------------------------------------------------
+# Initial minimization
+# ------------------------------------------------------------------------------
+minimize       1.0e-8 0 5000 1000000
+                # 1st argument: energy tolerance
+                # 2nd argument: force tolerance
+                # 3rd argument: max iterations
+                # 4th argument: max force evaluations
+
+timestep       0.0001            # Time step (in metal units)
+
+# ------------------------------------------------------------------------------
+# Thermalization: 0 K -> 14000 K
+# ------------------------------------------------------------------------------
+fix 2 all langevin 0 14000 1 3699483  # Langevin thermostat from 0K to 14000K
+fix 3 all nve
+fix 4 all enforce2d
+run            1400000
+
+# ------------------------------------------------------------------------------
+# Quick minimization
+# ------------------------------------------------------------------------------
+minimize       1.0e-8 0 1 1000000
+timestep       0.0001
+
+# ------------------------------------------------------------------------------
+# Equilibrate at 14000 K
+# ------------------------------------------------------------------------------
+fix 2 all langevin 14000 14000 1 3699483
+fix 3 all nve
+fix 4 all enforce2d
+run            1000000
+
+# ------------------------------------------------------------------------------
+# Quick minimization
+# ------------------------------------------------------------------------------
+minimize       1.0e-8 0 1 1000000
+timestep       0.0001
+
+# ------------------------------------------------------------------------------
+# Cooling: 14000 K -> 300 K
+# ------------------------------------------------------------------------------
+fix 2 all langevin 14000 300 1 3699483
+fix 3 all nve
+fix 4 all enforce2d
+run            150700
+
+# ------------------------------------------------------------------------------
+# Minimization
+# ------------------------------------------------------------------------------
+minimize       1.0e-8 0 5000 1000000
+timestep       0.0001
+
+# ------------------------------------------------------------------------------
+# Equilibrate at 300 K
+# ------------------------------------------------------------------------------
+fix 2 all langevin 300 300 1 3699483
+fix 3 all nve
+fix 4 all enforce2d
+run            1000000
+
+# ------------------------------------------------------------------------------
+# Final minimization
+# ------------------------------------------------------------------------------
+minimize       1.0e-8 0 5000 1000000

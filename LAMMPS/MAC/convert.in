@@ -1,0 +1,5 @@
+units metal
+atom_style atomic
+read_data data.catalysis_11_r3
+dump mydump all xyz 1000 data_converted.xyz
+run 0
