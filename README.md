@@ -8,7 +8,7 @@ This project implements **Markov Chain Monte Carlo (MCMC)** methods to simulate 
 
 <p align="center">
   <img src="https://github.com/davidomanovic/mcmc-solid-state/blob/main/output/spin_lattice.png" alt="SpinLattice" width="35%">
-  <img src="output/VMD_MAC.png" alt="SpinLattice" width="35%">
+  <img src="output/heating_mac.gif" alt="SpinLattice" width="35%">
 </p>
 
 
