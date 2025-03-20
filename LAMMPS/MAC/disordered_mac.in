@@ -1,0 +1,29 @@
+# Basic settings
+units          metal
+dimension      2
+boundary       p p p
+atom_style     atomic
+
+# Load initial structure
+read_data      data.catalysis_11_r3
+
+# Set up the AIREBO force field
+pair_style     airebo 3.0 1 1
+pair_coeff     * * CH.airebo C
+
+# Constrain motion to 2D
+fix 1 all enforce2d
+
+# Set timestep
+timestep       0.0001
+
+# Apply a thermostat to heat from 0 K to 14000 K
+fix 2 all langevin 0 14000 1 3699483
+fix 3 all nve
+
+# Run for sufficient timesteps to equilibrate at high temperature
+run            1400000
+
+# Dump a snapshot for later use
+dump mydump all xyz 1000 highT_structure.xyz
+run            0
